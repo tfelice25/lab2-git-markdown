@@ -15,18 +15,31 @@ tasks are comparable.  Here are the tasks:
    ```
    cd Desktop/school/info201/labs
    ```
-
+   _my code_
+   
+   ```
+   cd ~/Desktop/info201/labs
+   ```
 1. **fork** this repository on Github under your user name (see
    [course book 4.6.1](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#forking-and-cloning)).
+   
+   forked and used the following http 
+  https://github.com/info201/book.git 
+  
 
 2. **clone** the forked repo to your computer (see [course
    book 4.3.3](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-getting-creating)).
    Write the command you
    used underneath in a code block.
+   ```
+   git clone https://github.com/info201/book.git 
+   ``` 
    
 3. **add a new file** "books.md" to the repo.  You can use RStudio
    (file -> new file -> markdown file), or any other tool you find
    convenient.
+   
+   New file made in visual studio code 
    
 4. add a numbered list of book you like to this file
    (see [Github markdown
@@ -34,32 +47,66 @@ tasks are comparable.  Here are the tasks:
    You can use
    RStudio editor, or any other editor you like.
    
+   The power, eat west street and six of crows
+   
 5. check **git status** (see [course book
    4.4.1](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-situational-awareness)).
    Show below, in _block quote_, what does it print.
    
+   >"On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	books.md
+
+nothing added to commit but untracked files present (use "git add" to track)"
+   
    Explain, in plain text, what does it mean.
+   
+   It means that there is a new file in the repo that has not been tracked yet on    the local device. 
    
 6. **add** the new file to the repository (see [course book
   4.4.3](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-working-adding)).
   Show your command (as a
   code block).
+  
+  ```
+  git add books.md
+  ``` 
 
 7. Was your add successful?  Check status again!  Explain what do you
    see.
+   
+   I see that there is a new file added to the staging area, highlighted in green in the terminal
+   
    
 8. Now **commit** your changes (see [course book
    4.4.4](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-working-committing)). 
    Put your command underneath in a code block.
    
+   ```
+   git commit -am "books.md second attempt"
+   ``` 
 9. Was your commit successful?  How can you check it?  Show your
    command(s) as a code block and explain what you see!
+   
+   ```
+   git log
+   ```
+   
+   this will tell you a list of all the commits you have made that have been succsessful, with the most recent commit at top 
+   
    
 10. Now **push** your changes to Github (see [course book 4.4.5](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-working-pushing)).  You may
    need to create access token before you are able to push.
    
+   pushed successfully
+   
 11. Go to your github page.  Can you see the books.md file there with
     all the books listed?
+    
+    yes, except mine is called books.md 
 
 
 ## Folders and relative path
