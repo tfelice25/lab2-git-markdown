@@ -115,18 +115,45 @@ This task is about adding images and using relative path.
 
 1. create a folder "images" to your repo.  You can use either `mkdir`
    command, or the file manager.
+   
+   mkdir imgs
 
 2. put an image into the folder.  It should be of a type that Github
    can render, e.g. `.jpg` or `.png`, not sure about `.heic` or other
    very new formats.  (You can just download or copy it there).
    
+   Called ElliotBay90.jpeg
+   
 3. check git status.  What do you see?
+
+>"On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   readme.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	imgs/
+
+no changes added to commit (use "git add" and/or "git commit -a")"
 
 4. add image to the repo.  Show the command you are using in a code
    block.
    
+   ```
+   git add ElliotBay90.jpeg
+   git commit -am "adding image to repo"
+   git push
+   ```
+   
 5. check status again.  Does it indicate that the image has been
    added?
+   
+   >"nothing to commit, working tree clean"
+
    
 6. what is the relative path of your image if you start walking there
    from the location of your books.md file?
@@ -135,11 +162,15 @@ This task is about adding images and using relative path.
    path-to/file`, e.g.
    ```
    ls images/picture.jpg
+   
+   imgs/ElliotBay90.jpeg
    ```
    it lists the file name if correct, and complains about _no suc file
    or directory_ if the path is wrong.
    
 7. now add the image to your books.md file using the relative path.
+
+![Elliot Bay](imgs/ElliotBay90.jpeg)
 
 8. check git status and commit
 
